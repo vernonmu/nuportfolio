@@ -14,8 +14,12 @@ body {
 
       li {
         float: none;
-        width: 100px;
+        width: 75px;
         text-align: right;
+
+        &:hover {
+          background: red;
+        }
       }
     }
   }

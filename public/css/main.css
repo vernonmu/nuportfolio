@@ -15,8 +15,10 @@ body {
     justify-content: flex-end; }
     #header .navig ul li {
       float: none;
-      width: 100px;
+      width: 75px;
       text-align: right; }
+      #header .navig ul li:hover {
+        background: red; }
   #header h1 {
     padding: 35px 50px 50px;
     font-family: "Ubuntu", sans-serif;
