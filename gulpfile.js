@@ -1,6 +1,7 @@
 'use strict';
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const nodemon = require('gulp-nodemon')
 
 gulp.task('sass', () => {
   console.log('let us gulp!');
@@ -14,4 +15,11 @@ gulp.task('sass:watch', () => {
   gulp.watch('./public/sass/*.scss', ['sass']);
 });
 
-gulp.task('default', ['sass', 'sass:watch']);
+gulp.task('start', () => {
+  nodemon({
+    script: 'index.js',
+    ext: 'js html'
+  })
+})
+
+gulp.task('default', ['sass', 'start', 'sass:watch']);

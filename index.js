@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const gulp = require('gulp');
 const config = require('./config');
 const port = config.port;
 

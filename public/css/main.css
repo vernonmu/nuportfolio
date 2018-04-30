@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+nav {
+  display: flex;
+  background: none;
+  box-shadow: none; }
+
+body {
+  background: #E7F9F0;
+  color: #9D202F; }
+
+#header {
+  padding-top: 25px; }
+  #header .navig ul {
+    display: flex;
+    justify-content: flex-end; }
+    #header .navig ul li {
+      float: none;
+      width: 100px;
+      text-align: right; }
+  #header h1 {
+    padding: 35px 50px 50px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold; }
+
+#foot {
+  text-align: right;
+  display: flex;
+  align-items: flex-end;
+  flex-flow: column; }
+  #foot .social-list li:hover {
+    color: black;
+    transition: all 2s; }
+
+.social-list {
+  display: flex; }
+  .social-list li {
+    padding-right: 15px; }
+
+.card:hover {
+  transition: all 0.25s;
+  position: relative;
+  top: -2px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5); }
