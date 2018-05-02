@@ -17,9 +17,12 @@ body {
     #header .navig ul li {
       float: none;
       width: 75px;
-      text-align: right; }
+      text-align: center;
+      padding: 5px; }
       #header .navig ul li:hover {
-        background: red; }
+        background: #002946;
+        color: white;
+        border-radius: 2px; }
   #header h1 {
     padding: 250px 0;
     font-family: "Oswald", sans-serif;

@@ -16,10 +16,13 @@ body {
       li {
         float: none;
         width: 75px;
-        text-align: right;
+        text-align: center;
+        padding: 5px;
 
         &:hover {
-          background: red;
+          background: #002946;
+          color: white;
+          border-radius: 2px;
         }
       }
     }
