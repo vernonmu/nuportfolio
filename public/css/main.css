@@ -10,7 +10,7 @@ body {
   color: #333; }
 
 #header {
-  padding-top: 25px; }
+  padding: 25px 0 5vh; }
   #header .navig ul {
     display: flex;
     justify-content: flex-end; }
@@ -22,13 +22,40 @@ body {
       #header .navig ul li:hover {
         background: #002946;
         color: white;
-        border-radius: 2px; }
+        border-radius: 2px;
+        transition: all 2s; }
   #header h1 {
     padding: 250px 0;
     font-family: "Oswald", sans-serif;
     font-weight: bold;
     font-size: 3rem;
     text-align: center; }
+
+#skills {
+  background: #002946;
+  color: white;
+  padding: 20vh 0; }
+  #skills img {
+    height: 110px; }
+  #skills h4 {
+    margin: 15px 0;
+    text-transform: uppercase;
+    font-weight: bold; }
+  #skills p {
+    margin-bottom: 35px; }
+  #skills .skills-container {
+    display: flex;
+    justify-content: space-between; }
+    #skills .skills-container .git {
+      background: white;
+      border-radius: 50%; }
+
+#portfolio .card .card-title {
+  margin-bottom: 0; }
+
+#portfolio .card small {
+  display: block;
+  margin-bottom: 8px; }
 
 #foot {
   text-align: right;

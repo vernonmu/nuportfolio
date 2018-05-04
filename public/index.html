@@ -9,90 +9,58 @@
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId            : '756505731186381',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v3.0'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
     <section id="header" class="container">
       <div class="navig">
-        <ul>          
+        <ul>
           <li>resume</li>
           <li>contact</li>
         </ul>
       </div>
       <h1>Vernon Mullen is a front-end developer in Dallas, Texas.</h1>
     </section>
-    <section id="portfolio" class="container">
-      <!-- <ul>
+    <section id="skills">
 
-        <li>Tqkit App</li>
-        <li>RunServe Angular App</li>
-        <li>Booknow React</li>
-      </ul> -->
-      <div class="row">
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img src="https://searchengineland.com/figz/wp-content/seloads/2015/07/apps-mobile-smartphone-ss-1920-800x450.jpg" alt="">
-              <span class="card-title">Botavia Energy</span>
-            </div>
-            <div class="card-content">
-              <p>Lorem ipsum.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img src="https://searchengineland.com/figz/wp-content/seloads/2015/07/apps-mobile-smartphone-ss-1920-800x450.jpg" alt="">
-              <span class="card-title">Insurance Finder App</span>
-            </div>
-            <div class="card-content">
-              <p>Lorem ipsum.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img src="https://searchengineland.com/figz/wp-content/seloads/2015/07/apps-mobile-smartphone-ss-1920-800x450.jpg" alt="">
-              <span class="card-title">Excelsior Transportation</span>
-            </div>
-            <div class="card-content">
-              <p>Lorem ipsum.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img src="https://searchengineland.com/figz/wp-content/seloads/2015/07/apps-mobile-smartphone-ss-1920-800x450.jpg" alt="">
-              <span class="card-title">The Inner Space (THD)</span>
-            </div>
-            <div class="card-content">
-              <p>Lorem ipsum.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img src="https://searchengineland.com/figz/wp-content/seloads/2015/07/apps-mobile-smartphone-ss-1920-800x450.jpg" alt="">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <p>TQKIT App</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img src="https://searchengineland.com/figz/wp-content/seloads/2015/07/apps-mobile-smartphone-ss-1920-800x450.jpg" alt="">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <p>Bookit App</p>
-            </div>
-          </div>
+      <div class="container">
+        <h4 class="left-align">Tech Stack</h4>
+        <p>
+          JavaScript, Angular, ReactJS, NodeJS, Sass, Gulp, Bootstrap, Material, Git & Gitflow
+        </p>
+
+        <div class="skills-container center-align">
+          <img src="https://vernonmu.github.io/portfolio/img/js-skills-icons.png" alt="">
+          <!-- <p>JavaScript</p> -->
+          <img src="https://vernonmu.github.io/portfolio/img/angjs-skills-icons.png" alt="">
+          <!-- <p>Angular</p> -->
+          <img src="https://vernonmu.github.io/portfolio/img/react-skills-icons.png" alt="">
+          <img src="https://vernonmu.github.io/portfolio/img/node-skills-icons.png" alt="">
+          <img src="https://vernonmu.github.io/portfolio/img/sass-skills-icons.png" alt="">
+          <img src="https://vernonmu.github.io/portfolio/img/gulp-skills-icons.png" alt="">
+          <img src="https://vernonmu.github.io/portfolio/img/bstr-skills-icons.png" alt="">
+          <img src="https://vernonmu.github.io/portfolio/img/mtrl-skills-icons.png" alt="">
+          <img src="https://vernonmu.github.io/portfolio/img/ghub-skills-icons.png" alt="" class="git">
         </div>
       </div>
+    </section>
+    <section id="portfolio" class="container">
+      Botavia Energy Excelsior Transportation The Inner Space TQKIT Job App Bookit App Insurance Finder RepFinder Dallas Reps Quote Machine
     </section>
     <section id="foot" class="container">
       <h5>Follow me</h5>

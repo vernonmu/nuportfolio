@@ -6,7 +6,7 @@ body {
 }
 
 #header {
-  padding-top: 25px;
+  padding: 25px 0 5vh;
 
   .navig {
     ul {
@@ -23,6 +23,7 @@ body {
           background: #002946;
           color: white;
           border-radius: 2px;
+          transition: all 2s;
         }
       }
     }
@@ -34,6 +35,50 @@ body {
     font-weight: bold;
     font-size: 3rem;
     text-align: center;
+  }
+}
+
+#skills {
+  background: #002946;
+  color: white;
+  padding: 20vh 0;
+
+  img {
+    height: 110px;
+    // margin: 5px 100px;
+  }
+
+  h4 {
+    margin: 15px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  p {
+    margin-bottom: 35px;
+  }
+
+  .skills-container {
+    display: flex;
+    justify-content: space-between;
+    .git {
+      background: white;
+      border-radius: 50%;
+    }
+  }
+}
+
+#portfolio {
+  .card {
+
+    .card-title {
+      margin-bottom: 0;
+    }
+
+    small {
+      display: block;
+      margin-bottom: 8px;
+    }
   }
 }
 
