@@ -8,6 +8,11 @@ body {
   background: #fafafa;
   background: linear-gradient(to bottom right, #FFFBED, #007679);
   color: #333; }
+  body h4 {
+    font-size: 5em;
+    margin: 15px 0;
+    text-transform: uppercase;
+    font-weight: bold; }
 
 #header {
   padding: 25px 0 5vh; }
@@ -37,10 +42,6 @@ body {
   padding: 20vh 0; }
   #skills img {
     height: 110px; }
-  #skills h4 {
-    margin: 15px 0;
-    text-transform: uppercase;
-    font-weight: bold; }
   #skills p {
     margin-bottom: 35px; }
   #skills .skills-container {
@@ -50,28 +51,36 @@ body {
       background: white;
       border-radius: 50%; }
 
-#portfolio .card .card-title {
-  margin-bottom: 0; }
-
-#portfolio .card small {
-  display: block;
-  margin-bottom: 8px; }
+#portfolio {
+  background: #FFAE19;
+  padding: 20vh 0; }
+  #portfolio h4 {
+    color: #333; }
+  #portfolio img {
+    height: 250px; }
 
 #foot {
+  background: #333;
   text-align: right;
   display: flex;
   align-items: flex-end;
-  flex-flow: column; }
-  #foot .social-list li {
+  flex-flow: column;
+  padding-bottom: 25px; }
+  #foot h4 {
     color: white; }
-    #foot .social-list li:hover {
-      color: black;
-      transition: all 2s; }
+  #foot .social-list {
+    justify-content: flex-end; }
+    #foot .social-list li {
+      color: white; }
+      #foot .social-list li:hover {
+        color: black;
+        transition: all 2s; }
   #foot h5 {
     color: white; }
   #foot p {
     color: white;
-    background: white; }
+    background: white;
+    display: inline; }
 
 .social-list {
   display: flex; }
