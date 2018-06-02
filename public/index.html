@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html ng-app="portfolio" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio | Vernon Mullen</title>
     <!-- googl analytics here -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
   </head>
-  <body>
+  <body ng-controller="mainCtrl">
     <script>
       window.fbAsyncInit = function() {
         FB.init({
@@ -35,13 +36,18 @@
         </ul>
       </div>
       <h1>Vernon Mullen is a front-end developer in Dallas, Texas.</h1>
+      <a class="btn btn-primary btn-lg"
+      du-smooth-scroll
+      href="#skills"
+      duration="1550">
+        Lets go!
+      </a>
     </section>
     <section id="skills">
-
       <div class="container">
         <h4 class="left-align">Tech Stack</h4>
         <p>
-          I use JavaScript, Angular, ReactJS, NodeJS, Sass, Gulp, Bootstrap, Material, Git & Gitflow for my work, while using Atom Editor (preferably), Webstorm, Visual Studio, or good-ole notepad.</p>
+          I use JavaScript, Angular, ReactJS, ASP.NET, C#, NodeJS, Sass, Gulp, Bootstrap, Material, Git & Gitflow for my work, while using Atom Editor (preferably), Webstorm, Visual Studio, or good-ole notepad.</p>
         <div class="skills-container center-align">
           <img src="https://vernonmu.github.io/portfolio/img/js-skills-icons.png" alt="">
           <!-- <p>JavaScript</p> -->
@@ -55,118 +61,104 @@
           <img src="https://vernonmu.github.io/portfolio/img/mtrl-skills-icons.png" alt="">
           <img src="https://vernonmu.github.io/portfolio/img/ghub-skills-icons.png" alt="" class="git">
         </div>
+        <a href="#work" class="btn-see btn btn-lg btn-primary" du-smooth-scroll duration="1550">See my work</a>
       </div>
     </section>
     <section id="portfolio">
-      <div class="container">
-        <h4>Projects</h4>
+      <div class="container" id="work">
+        <h4>My Recent Work</h4>
+        <p class="recent-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <div class="row">
-          <div class="col m6">
+          <div class="col s12 m5">
             <div class="card">
-              <div class="card-content">
-                Botavia Energy
+              <div class="card-image">
+                <img src="images/botaviascreen.png" alt="">
               </div>
             </div>
           </div>
-          <div class="col m6">
-            <p>Explanation</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col m6">
-            <div class="card">
-              <div class="card-content">
-                Excelsior Transportation
+          <div class="col s12 m7">
+            <div class="">
+              <div class="not-card">
+                <h5>Botavia Energy</h5>
+                <span class="badge jquery">JQuery</span>
+                <span class="badge css">SASS</span>
+                <span class="badge html">HTML</span>
+                <p>This organization was in need of a new website. A designer friend provided the UI designs and styling, and I built the single page app.</p>
+                <div class="buttons">
+                  <button type="button" name="button" class="btn btn-flat">
+                    Visit Website
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col m6">
-            <p>Explanation</p>
-          </div>
         </div>
         <div class="row">
-          <div class="col m6">
+          <div class="col s12 m5">
             <div class="card">
-              <div class="card-content">
-                Tqkit App
+              <div class="card-image">
+                <img src="images/excelsiorscreen.png" alt="">
               </div>
             </div>
           </div>
-          <div class="col m6">
-            <p>Explanation</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col m6">
-            <div class="card">
-              <div class="card-content">
-                Bookit App
-              </div>
-            </div>
-          </div>
-          <div class="col m6">
-            <p>Explanation</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col m6">
-            <div class="card">
-              <div class="card-content">
-                Inner Space
-              </div>
-            </div>
-          </div>
-          <div class="col m6">
-            <p>Explanation</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col m6">
-            <div class="card">
-              <div class="card-content">
-                Insurance Finder
-              </div>
-            </div>
-          </div>
-          <div class="col m6">
-            <p>Explanation</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col m6">
-            <div class="card">
-              <div class="card-content">
-                MyReps App
-              </div>
-            </div>
-          </div>
-          <div class="col m6">
-            <p>Explanation</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col m6">
-            <div class="card">
-              <div class="card-content">
-                Dallas API
-              </div>
-            </div>
-          </div>
-          <div class="col m6">
-            <p>Explanation</p>
-          </div>
-        </div>
+          <div class="col s12 m7">
+            <div class="">
+              <div class="not-card">
+                <h5>Excelsior Transportation</h5>
 
-        <div class="">
-          <img src="http://www.car-brand-names.com/wp-content/uploads/2015/08/Nissan-logo-2.jpg" alt="">
-          <img src="https://res.cloudinary.com/teepublic/image/private/s--aIpl8-ZI--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1479553396/production/designs/836554_1.jpg" alt="">
-          <img src="https://i.pinimg.com/originals/7c/f5/1a/7cf51a7e22b56c0536fdef8d9963ea9f.jpg" alt="">
+                <span class="badge jquery">JQuery</span>
+                <span class="badge css">SASS</span>
+                <span class="badge html">HTML</span>
+                <p>This organization was in need of a new website. A designer friend provided the UI designs and styling, and I built the single page app.</p>
+                <div class="buttons">
+                  <button type="button" name="button" class="btn btn-flat">
+                    Visit Website
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="row">
+          <div class="col s12 m5">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://vernonmu.github.io/portfolio/img/tqkit-screen4.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m7">
+            <div class="">
+              <div class="not-card">
+                <h5>Tqkit CRM</h5>
+
+                <span class="badge jquery">JQuery</span>
+                <span class="badge css">SASS</span>
+                <span class="badge html">HTML</span>
+                <p>This organization was in need of a new website. A designer friend provided the UI designs and styling, and I built the single page app.</p>
+                <div class="buttons">
+                  <button type="button" name="button" class="btn btn-flat">
+                    Visit Website
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="others">
+      <div class="container">
+        <h5>I'm proud to have collaborated with these awesome brands.</h5>
+        <img src="http://www.car-brand-names.com/wp-content/uploads/2015/08/Nissan-logo-2.jpg" alt="">
+        <img src="https://res.cloudinary.com/teepublic/image/private/s--aIpl8-ZI--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1479553396/production/designs/836554_1.jpg" alt="">
+        <img src="https://i.pinimg.com/originals/7c/f5/1a/7cf51a7e22b56c0536fdef8d9963ea9f.jpg" alt="">
+        <img src="https://fourscore.io/images/home/logo.svg" alt="">
       </div>
     </section>
     <section id="foot">
       <div class="container">
-        <h4>& elsewhere</h4>
+        <h4>&</h4>
         <ul class="social-list">
           <li>
             <i class="fab fa-twitter"></i>
@@ -175,9 +167,6 @@
             <i class="fab fa-linkedin-in"></i>
           </li>
         </ul>
-        <div class="">
-
-        </div>
         <p>
           <small>
             2018 Vernon Mullen. May the force be with you, always.
@@ -185,5 +174,10 @@
         </p>
       </div>
     </section>
+    <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
+    <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+    <script src="app.js" charset="utf-8"></script>
+    <script src="mainCtrl.js" charset="utf-8"></script>
+    <script src="mainSrv.js" charset="utf-8"></script>
   </body>
 </html>

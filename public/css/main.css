@@ -4,18 +4,35 @@ nav {
   background: none;
   box-shadow: none; }
 
+span.badge {
+  float: none; }
+
 body {
   background: #fafafa;
   background: linear-gradient(to bottom right, #FFFBED, #007679);
   color: #333; }
   body h4 {
-    font-size: 5em;
+    font-size: 2.5em;
     margin: 15px 0;
-    text-transform: uppercase;
-    font-weight: bold; }
+    text-transform: uppercase; }
+  body .badge {
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: .75em;
+    margin-left: 0; }
+    body .badge.html {
+      background: red;
+      color: white; }
+    body .badge.jquery {
+      background: navy;
+      color: white; }
+    body .badge.css {
+      background: gold;
+      color: #333; }
 
 #header {
-  padding: 25px 0 5vh; }
+  padding: 25px 0 50vh;
+  text-align: center; }
   #header .navig ul {
     display: flex;
     justify-content: flex-end; }
@@ -30,7 +47,7 @@ body {
         border-radius: 2px;
         transition: all 2s; }
   #header h1 {
-    padding: 250px 0;
+    padding: 250px 0 25px;
     font-family: "Oswald", sans-serif;
     font-weight: bold;
     font-size: 3rem;
@@ -43,21 +60,63 @@ body {
   #skills img {
     height: 110px; }
   #skills p {
-    margin-bottom: 35px; }
+    margin: 50px 0;
+    font-size: 18px;
+    line-height: 2; }
   #skills .skills-container {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-flow: row wrap; }
     #skills .skills-container .git {
       background: white;
       border-radius: 50%; }
+  #skills .btn-see {
+    margin: 75px auto;
+    width: 175px;
+    display: block; }
 
 #portfolio {
-  background: #FFAE19;
+  background: linear-gradient(to bottom, #002946, #FFAE19);
   padding: 20vh 0; }
   #portfolio h4 {
-    color: #333; }
+    color: white;
+    padding-bottom: 10px; }
   #portfolio img {
     height: 250px; }
+  #portfolio .recent-description {
+    color: #fafafa;
+    padding-bottom: 50px;
+    line-height: 2;
+    font-size: 18px; }
+  #portfolio .card-image {
+    overflow: hidden;
+    display: flex;
+    justify-content: center; }
+    #portfolio .card-image img {
+      min-height: 300px;
+      width: auto; }
+  #portfolio .not-card {
+    margin-top: 10px;
+    padding: 15px;
+    background: white;
+    color: #333; }
+  #portfolio .buttons {
+    margin-top: 45px; }
+    #portfolio .buttons .btn-flat {
+      border: 1px solid #333; }
+      #portfolio .buttons .btn-flat:hover {
+        background: #33A2FF !important;
+        color: white;
+        border: 1px solid #33A2FF;
+        transition: all 1s; }
+
+#others {
+  background: purple;
+  color: white;
+  padding-top: 50px; }
+  #others img {
+    max-height: 250px;
+    width: 100%; }
 
 #foot {
   background: #333;

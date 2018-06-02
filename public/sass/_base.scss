@@ -5,15 +5,38 @@ body {
   color: $font-green;
 
   h4 {
-    font-size: 5em;
+    font-size: 2.5em;
     margin: 15px 0;
     text-transform: uppercase;
-    font-weight: bold;
+    // font-weight: bold;
+  }
+
+  .badge {
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: .75em;
+    margin-left: 0;
+
+    &.html {
+      background: red;
+      color: white;
+    }
+
+    &.jquery {
+      background: navy;
+      color: white;
+    }
+
+    &.css {
+      background: gold;
+      color: #333;
+    }
   }
 }
 
 #header {
-  padding: 25px 0 5vh;
+  padding: 25px 0 50vh;
+  text-align: center;
 
   .navig {
     ul {
@@ -37,7 +60,7 @@ body {
   }
 
   h1 {
-    padding: 250px 0;
+    padding: 250px 0 25px;
     font-family: $font-fancy;
     font-weight: bold;
     font-size: 3rem;
@@ -55,37 +78,99 @@ body {
     // margin: 5px 100px;
   }
 
-  h4 {
-
-  }
 
   p {
-    margin-bottom: 35px;
+    margin: 50px 0;
+    font-size: 18px;
+    line-height: 2;
   }
 
   .skills-container {
     display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
+
     .git {
       background: white;
       border-radius: 50%;
     }
   }
+
+  .btn-see {
+    margin: 75px auto;
+    width: 175px;
+    display: block;
+  }
 }
 
 #portfolio {
-  background: #FFAE19;
+  // background: #FFAE19;
+  background: linear-gradient(to bottom, #002946, #FFAE19);
   padding: 20vh 0;
 
   h4 {
-    color: #333;
+    color: white;
+    padding-bottom: 10px;
   }
 
   img {
     height: 250px;
   }
+  .recent-description {
+    color: #fafafa;
+    padding-bottom: 50px;
+    line-height: 2;
+    font-size: 18px;
+  }
+
+  .card-image {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+    img {
+      min-height: 300px;
+      width: auto;
+    }
+  }
+
+  .not-card {
+    margin-top: 10px;
+    padding: 15px;
+    background:white;
+    color: #333;
+  }
+
+  .buttons {
+    margin-top: 45px;
+
+    .btn-flat {
+      border: 1px solid #333;
+
+      &:hover {
+        background: #33A2FF !important;
+        color: white;
+        border: 1px solid #33A2FF;
+        transition: all 1s;
+
+      }
+    }
+  }
 }
 
+#others {
+  background: purple;
+  color: white;
+  padding-top: 50px;
+
+  img {
+    max-height: 250px;
+    width: 100%;
+    // margin: 5px 100px;
+  }
+
+
+}
 #foot {
   background: #333;
   text-align: right;
