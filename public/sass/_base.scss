@@ -7,7 +7,7 @@ body {
   h4 {
     font-size: 2.5em;
     margin: 15px 0;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     // font-weight: bold;
   }
 
@@ -16,6 +16,7 @@ body {
     padding: 5px 10px;
     font-size: .75em;
     margin-left: 0;
+    box-shadow: 0 1px 1px #666;
 
     &.html {
       background: red;
@@ -30,6 +31,21 @@ body {
     &.css {
       background: gold;
       color: #333;
+    }
+
+    &.node {
+      background: green;
+      color: white;
+    }
+
+    &.psql {
+      background: #add8e6;
+      color: #333;
+    }
+
+    &.aws {
+      background: orange;
+      color: white;
     }
   }
 }
@@ -66,6 +82,10 @@ body {
     font-size: 3rem;
     text-align: center;
   }
+
+  .btn-go {
+    margin-top: 55px;
+  }
 }
 
 #skills {
@@ -74,8 +94,8 @@ body {
   padding: 20vh 0;
 
   img {
-    height: 110px;
-    // margin: 5px 100px;
+    height: 200px;
+    margin: 5px 10px 5px 0
   }
 
 
@@ -85,9 +105,13 @@ body {
     line-height: 2;
   }
 
+  .container {
+    padding-top: 25px;
+  }
+
   .skills-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-flow: row wrap;
 
     .git {
@@ -104,7 +128,6 @@ body {
 }
 
 #portfolio {
-  // background: #FFAE19;
   background: linear-gradient(to bottom, #002946, #FFAE19);
   padding: 20vh 0;
 
@@ -130,7 +153,6 @@ body {
 
     img {
       min-height: 300px;
-      width: auto;
     }
   }
 
@@ -152,27 +174,38 @@ body {
         color: white;
         border: 1px solid #33A2FF;
         transition: all 1s;
-
       }
     }
+  }
+
+  .container {
+    padding-top: 25px;
   }
 }
 
 #others {
   background: purple;
   color: white;
-  padding-top: 50px;
+  padding-top: 100px;
 
   img {
-    max-height: 250px;
-    width: 100%;
-    // margin: 5px 100px;
+    max-height: 325px;
+    border-radius: 5px;
+    padding: 0 20px 10px 0;
   }
 
+  .fscore {
+    margin: 100px;
+  }
 
+  .skills-container {
+    margin-top: 75px;
+    padding-bottom: 75px;
+  }
 }
+
 #foot {
-  background: #333;
+  background: #222;
   text-align: right;
   display: flex;
   align-items: flex-end;
@@ -188,9 +221,12 @@ body {
 
     li {
       color: white;
-      &:hover {
-        color: black;
-        transition: all 2s;
+
+      a {
+        &:hover {
+          color: black;
+          transition: all 2s;
+        }
       }
     }
   }
@@ -201,8 +237,16 @@ body {
 
   p {
     color: white;
-    background: white;
     display: inline;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    font-size: .75em;
+
+    &.captain {
+      background: white;
+
+    }
   }
 }
 
@@ -227,5 +271,41 @@ body {
 @media only screen and (min-width: 993px) {
   .container {
       width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+  #portfolio {
+    .card-image {
+      img {
+        min-height: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #others {
+    img {
+      max-height: 300px;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #skills {
+    .skills-container {
+      justify-content: center;
+
+      img {
+        height: 100px;
+      }
+    }
+  }
+
+  #others {
+    img {
+      width: 100%;
+    }
   }
 }

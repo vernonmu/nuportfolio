@@ -31,23 +31,24 @@
     <section id="header" class="container">
       <div class="navig">
         <ul>
-          <li>resume</li>
-          <li>contact</li>
+          <li><a href="#tech" du-smooth-scroll duration="1550">Skills</a></li>
+          <li><a href="#work" du-smooth-scroll duration="1550">Work</a></li>
+          <!-- <li>Contact</li> -->
         </ul>
       </div>
       <h1>Vernon Mullen is a front-end developer in Dallas, Texas.</h1>
-      <a class="btn btn-primary btn-lg"
+      <a class="btn-go btn btn-primary btn-lg"
       du-smooth-scroll
-      href="#skills"
+      href="#tech"
       duration="1550">
         Lets go!
       </a>
     </section>
     <section id="skills">
-      <div class="container">
+      <div id="tech" class="container">
         <h4 class="left-align">Tech Stack</h4>
         <p>
-          I use JavaScript, Angular, ReactJS, ASP.NET, C#, NodeJS, Sass, Gulp, Bootstrap, Material, Git & Gitflow for my work, while using Atom Editor (preferably), Webstorm, Visual Studio, or good-ole notepad.</p>
+          I use JavaScript, Angular, ReactJS, ASP.NET, C#, NodeJS, Scss, Gulp, Bootstrap, Material, Git & Gitflow for my work, while using Atom Editor (preferably), Webstorm, Visual Studio, or good-ole notepad.</p>
         <div class="skills-container center-align">
           <img src="https://vernonmu.github.io/portfolio/img/js-skills-icons.png" alt="">
           <!-- <p>JavaScript</p> -->
@@ -69,73 +70,77 @@
         <h4>My Recent Work</h4>
         <p class="recent-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <div class="row">
-          <div class="col s12 m5">
+          <div class="col s12 l5">
             <div class="card">
               <div class="card-image">
-                <img src="images/botaviascreen.png" alt="">
+                <img src="images/botaviascreen.png" alt="" class="responsive-img">
               </div>
             </div>
           </div>
-          <div class="col s12 m7">
+          <div class="col s12 l7">
             <div class="">
               <div class="not-card">
                 <h5>Botavia Energy</h5>
                 <span class="badge jquery">JQuery</span>
-                <span class="badge css">SASS</span>
                 <span class="badge html">HTML</span>
-                <p>This organization was in need of a new website. A designer friend provided the UI designs and styling, and I built the single page app.</p>
+                <span class="badge css">CSS</span>
+                <p>A UI Designer reached out to build this site for the client. I built the site using jQuery, HTML, and CSS.</p>
                 <div class="buttons">
-                  <button type="button" name="button" class="btn btn-flat">
+                  <a  href="http://www.botaviaenergy.com" target="_blank" class="btn btn-flat">
                     Visit Website
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col s12 m5">
+          <div class="col s12 l5">
             <div class="card">
               <div class="card-image">
-                <img src="images/excelsiorscreen.png" alt="">
+                <img src="images/excelsiorscreen.png" alt="" class="responsive-img">
               </div>
             </div>
           </div>
-          <div class="col s12 m7">
+          <div class="col s12 l7">
             <div class="">
               <div class="not-card">
                 <h5>Excelsior Transportation</h5>
 
-                <span class="badge jquery">JQuery</span>
-                <span class="badge css">SASS</span>
+                <span class="badge jquery">AngularJS</span>
+                <span class="badge css">SCSS</span>
                 <span class="badge html">HTML</span>
-                <p>This organization was in need of a new website. A designer friend provided the UI designs and styling, and I built the single page app.</p>
+                <span class="badge node">NodeJS</span>
+                <p>This client was launching a new business. I designed and built this site to get their operation started. The site uses AngularJS, SCSS, and NodeJS to serve the requests.</p>
                 <div class="buttons">
-                  <button type="button" name="button" class="btn btn-flat">
+                  <a href="http://www.travelexl.com" class="btn btn-flat" target="_blank">
                     Visit Website
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col s12 m5">
+          <div class="col s12 l5">
             <div class="card">
               <div class="card-image">
-                <img src="https://vernonmu.github.io/portfolio/img/tqkit-screen4.png" alt="">
+                <img src="https://vernonmu.github.io/portfolio/img/tqkit-screen4.png" alt="" class="responsive-img">
               </div>
             </div>
           </div>
-          <div class="col s12 m7">
+          <div class="col s12 l7">
             <div class="">
               <div class="not-card">
                 <h5>Tqkit CRM</h5>
 
-                <span class="badge jquery">JQuery</span>
-                <span class="badge css">SASS</span>
+                <span class="badge angular">AngularJS</span>
+                <span class="badge css">SCSS</span>
                 <span class="badge html">HTML</span>
-                <p>This organization was in need of a new website. A designer friend provided the UI designs and styling, and I built the single page app.</p>
+                <span class="badge node">NodeJS</span>
+                <span class="badge psql">PostgreSQL</span>
+                <span class="badge aws">AWS</span>
+                <p>I built this work service ticket customer relationship management (CRM) app to serve businesses with employees visiting customer sites. The single page app uses AngularJS, NodeJS, HTML, SCSS, and PostgreSQL to store the company and ticket data in multiple tables.</p>
                 <div class="buttons">
                   <button type="button" name="button" class="btn btn-flat">
                     Visit Website
@@ -149,11 +154,15 @@
     </section>
     <section id="others">
       <div class="container">
-        <h5>I'm proud to have collaborated with these awesome brands.</h5>
-        <img src="http://www.car-brand-names.com/wp-content/uploads/2015/08/Nissan-logo-2.jpg" alt="">
-        <img src="https://res.cloudinary.com/teepublic/image/private/s--aIpl8-ZI--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1479553396/production/designs/836554_1.jpg" alt="">
-        <img src="https://i.pinimg.com/originals/7c/f5/1a/7cf51a7e22b56c0536fdef8d9963ea9f.jpg" alt="">
-        <img src="https://fourscore.io/images/home/logo.svg" alt="">
+        <h4>I'm proud to have also collaborated with these awesome organizations.</h4>
+        <div class="skills-container">
+          <img src="/images/inf-port-logo-size.jpg" alt="">
+          <img src="/images/nis-port-logo-size.jpg" alt="">
+          <img src="/images/sub-port-logo-size.jpg" alt="">
+          <img src="/images/ste-port-logo-size.png" alt="">
+          <img src="/images/jcp-port-logo-size.png" alt="">
+          <img src="/images/fs-port-logo-size.png" alt="">
+        </div>
       </div>
     </section>
     <section id="foot">
@@ -161,16 +170,24 @@
         <h4>&</h4>
         <ul class="social-list">
           <li>
-            <i class="fab fa-twitter"></i>
+            Follow me
           </li>
           <li>
-            <i class="fab fa-linkedin-in"></i>
+            <a href="http://www.twitter.com/mullen_vernon">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.linkedin.com/en/vernonmullen">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
           </li>
         </ul>
         <p>
-          <small>
-            2018 Vernon Mullen. May the force be with you, always.
-          </small>
+          2018, Vernon Mullen.
+        </p>
+        <p class="captain">
+          May the force be with you, always.
         </p>
       </div>
     </section>

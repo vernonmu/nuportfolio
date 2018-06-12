@@ -7,19 +7,24 @@ nav {
 span.badge {
   float: none; }
 
+.card {
+  background: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none; }
+
 body {
   background: #fafafa;
   background: linear-gradient(to bottom right, #FFFBED, #007679);
   color: #333; }
   body h4 {
     font-size: 2.5em;
-    margin: 15px 0;
-    text-transform: uppercase; }
+    margin: 15px 0; }
   body .badge {
     border-radius: 10px;
     padding: 5px 10px;
     font-size: .75em;
-    margin-left: 0; }
+    margin-left: 0;
+    box-shadow: 0 1px 1px #666; }
     body .badge.html {
       background: red;
       color: white; }
@@ -29,6 +34,15 @@ body {
     body .badge.css {
       background: gold;
       color: #333; }
+    body .badge.node {
+      background: green;
+      color: white; }
+    body .badge.psql {
+      background: #add8e6;
+      color: #333; }
+    body .badge.aws {
+      background: orange;
+      color: white; }
 
 #header {
   padding: 25px 0 50vh;
@@ -52,20 +66,25 @@ body {
     font-weight: bold;
     font-size: 3rem;
     text-align: center; }
+  #header .btn-go {
+    margin-top: 55px; }
 
 #skills {
   background: #002946;
   color: white;
   padding: 20vh 0; }
   #skills img {
-    height: 110px; }
+    height: 200px;
+    margin: 5px 10px 5px 0; }
   #skills p {
     margin: 50px 0;
     font-size: 18px;
     line-height: 2; }
+  #skills .container {
+    padding-top: 25px; }
   #skills .skills-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-flow: row wrap; }
     #skills .skills-container .git {
       background: white;
@@ -93,8 +112,7 @@ body {
     display: flex;
     justify-content: center; }
     #portfolio .card-image img {
-      min-height: 300px;
-      width: auto; }
+      min-height: 300px; }
   #portfolio .not-card {
     margin-top: 10px;
     padding: 15px;
@@ -109,17 +127,25 @@ body {
         color: white;
         border: 1px solid #33A2FF;
         transition: all 1s; }
+  #portfolio .container {
+    padding-top: 25px; }
 
 #others {
   background: purple;
   color: white;
-  padding-top: 50px; }
+  padding-top: 100px; }
   #others img {
-    max-height: 250px;
-    width: 100%; }
+    max-height: 325px;
+    border-radius: 5px;
+    padding: 0 20px 10px 0; }
+  #others .fscore {
+    margin: 100px; }
+  #others .skills-container {
+    margin-top: 75px;
+    padding-bottom: 75px; }
 
 #foot {
-  background: #333;
+  background: #222;
   text-align: right;
   display: flex;
   align-items: flex-end;
@@ -131,15 +157,20 @@ body {
     justify-content: flex-end; }
     #foot .social-list li {
       color: white; }
-      #foot .social-list li:hover {
+      #foot .social-list li a:hover {
         color: black;
         transition: all 2s; }
   #foot h5 {
     color: white; }
   #foot p {
     color: white;
-    background: white;
-    display: inline; }
+    display: inline;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    font-size: .75em; }
+    #foot p.captain {
+      background: white; }
 
 .social-list {
   display: flex; }
@@ -155,3 +186,19 @@ body {
 @media only screen and (min-width: 993px) {
   .container {
     width: 80%; } }
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  #portfolio .card-image img {
+    min-height: auto; } }
+
+@media only screen and (max-width: 768px) {
+  #others img {
+    max-height: 300px; } }
+
+@media only screen and (max-width: 480px) {
+  #skills .skills-container {
+    justify-content: center; }
+    #skills .skills-container img {
+      height: 100px; }
+  #others img {
+    width: 100%; } }
