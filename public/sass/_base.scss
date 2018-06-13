@@ -238,7 +238,13 @@ body {
   h4 {
     color: #333;
     margin-bottom: 125px;
-    font-weight: bold;
+    // font-weight: bold;
+    &.backed {
+      background: linear-gradient(to bottom, white, rgba(255,255,255,0.75));
+      padding: 50px;
+      border-radius: 4px;
+      box-shadow: 0px 1px 1px #666;
+    }
   }
 
   img {
@@ -265,6 +271,7 @@ body {
   align-items: flex-end;
   flex-flow: column;
   padding-bottom: 25px;
+  padding-top: 50px;
 
   h4 {
     color: white;
@@ -316,7 +323,7 @@ body {
   }
 
   .container {
-    background: linear-gradient(to bottom, maroon, black);
+    background: linear-gradient(to bottom, rgba(0,0,0,0), black);
     padding: 8px;
   }
 }
@@ -344,8 +351,16 @@ body {
 
   .container {
     padding: 50px 5%;
-    color: white;
+    // color: white;
     padding-bottom: 75px;
+  }
+
+  .verns-card {
+    background: linear-gradient(to bottom, white, rgba(255,255,255,0.75));
+    padding: 50px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px #333;
+    margin-bottom: 50px;
   }
 
   .button-container {
