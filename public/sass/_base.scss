@@ -1,14 +1,11 @@
 body {
   background: $color-mint;
   background: linear-gradient(to bottom right, #FFFBED, #007679);
-  // padding: 25px;
   color: $font-green;
 
   h4 {
     font-size: 2.5em;
     margin: 15px 0;
-    // text-transform: uppercase;
-    // font-weight: bold;
   }
 
   .badge {
@@ -77,10 +74,6 @@ body {
 
         a {
           color: #333;
-
-          &:hover {
-            // color: white;
-          }
         }
       }
     }
@@ -114,17 +107,14 @@ body {
     left: -8px;
     background-color: #333;
     color: #ffffff;
-    // height: 30px;
     line-height: 30px;
     border-radius: 2px;
     padding: 16px 15px;
     content: attr(data-tooltip);
     white-space: nowrap;
-    // display: none;
     opacity: 0;
     font-size: 20px;
     transition: opacity 0.75s ease-out;
-  /*   text-transform: uppercase; */
   }
   .port-tooltip[data-tooltip]:after {
     position: absolute;
@@ -134,7 +124,6 @@ body {
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     content: "";
-    // display: none;
     opacity: 0;
     transition: opacity 0.75s ease-out;
   }
@@ -153,7 +142,7 @@ body {
 
   img {
     height: 200px;
-    margin: 5px 10px 5px 0
+    margin: 5px 20px 5px 0
   }
 
 
@@ -241,7 +230,6 @@ body {
 }
 
 #others {
-  // background: purple;
   background: linear-gradient(to bottom, #FFAE19, purple);
   color: white;
   padding-top: 100px;
@@ -385,6 +373,11 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
+  #header {
+    h1 {
+      padding: 75px 0;
+    }
+  }
   #skills {
     .skills-container {
       img {

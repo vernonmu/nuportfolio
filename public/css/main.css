@@ -91,8 +91,7 @@ body {
     white-space: nowrap;
     opacity: 0;
     font-size: 20px;
-    transition: opacity 0.75s ease-out;
-    /*   text-transform: uppercase; */ }
+    transition: opacity 0.75s ease-out; }
   #header .port-tooltip[data-tooltip]:after {
     position: absolute;
     left: 15px;
@@ -115,7 +114,7 @@ body {
   padding: 20vh 0; }
   #skills img {
     height: 200px;
-    margin: 5px 10px 5px 0; }
+    margin: 5px 20px 5px 0; }
   #skills p {
     margin: 50px 0;
     font-size: 18px;
@@ -257,6 +256,8 @@ body {
     justify-content: center; } }
 
 @media only screen and (max-width: 480px) {
+  #header h1 {
+    padding: 75px 0; }
   #skills .skills-container img {
     height: 100px; }
   #others h4 {
