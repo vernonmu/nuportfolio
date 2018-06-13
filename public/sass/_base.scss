@@ -64,12 +64,23 @@ body {
         width: 75px;
         text-align: center;
         padding: 5px;
+        transition: all 2s;
+        margin: 0 10px;
 
         &:hover {
           background: #002946;
-          color: white;
-          border-radius: 2px;
-          transition: all 2s;
+          border-radius: 5px;
+          a {
+            color: white;
+          }
+        }
+
+        a {
+          color: #333;
+
+          &:hover {
+            // color: white;
+          }
         }
       }
     }
@@ -81,10 +92,57 @@ body {
     font-weight: bold;
     font-size: 3rem;
     text-align: center;
+
+    a {
+      color: #007679;
+    }
   }
 
   .btn-go {
     margin-top: 55px;
+  }
+
+  .port-tooltip {
+    position: relative;
+    transition: all 2s;
+  }
+
+  .port-tooltip[data-tooltip]:before {
+    position: absolute;
+    width: auto;
+    top: -71px;
+    left: -8px;
+    background-color: #333;
+    color: #ffffff;
+    // height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+    padding: 16px 15px;
+    content: attr(data-tooltip);
+    white-space: nowrap;
+    // display: none;
+    opacity: 0;
+    font-size: 20px;
+    transition: opacity 0.75s ease-out;
+  /*   text-transform: uppercase; */
+  }
+  .port-tooltip[data-tooltip]:after {
+    position: absolute;
+    left: 15px;
+    top: -9px;
+    border-top: 7px solid #333;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    content: "";
+    // display: none;
+    opacity: 0;
+    transition: opacity 0.75s ease-out;
+  }
+  .port-tooltip[data-tooltip]:hover:after,
+  .port-tooltip[data-tooltip]:hover:before {
+      display: block;
+      opacity: 1;
+      transition: opacity 0.75s ease-out;
   }
 }
 
@@ -118,6 +176,13 @@ body {
       background: white;
       border-radius: 50%;
     }
+
+    img {
+      &:hover {
+        height: 225px;
+        transition: height 0.25s ease-out;
+      }
+    }
   }
 
   .btn-see {
@@ -136,9 +201,6 @@ body {
     padding-bottom: 10px;
   }
 
-  img {
-    height: 250px;
-  }
   .recent-description {
     color: #fafafa;
     padding-bottom: 50px;
@@ -148,19 +210,14 @@ body {
 
   .card-image {
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-
-    img {
-      min-height: 300px;
-    }
   }
 
   .not-card {
     margin-top: 10px;
     padding: 15px;
-    background:white;
+    background: linear-gradient(to bottom left, rgba(255,255,255,0.65), rgba(255,255,255,0.95));
     color: #333;
+    border-radius: 3px;
   }
 
   .buttons {
@@ -184,9 +241,16 @@ body {
 }
 
 #others {
-  background: purple;
+  // background: purple;
+  background: linear-gradient(to bottom, #FFAE19, purple);
   color: white;
   padding-top: 100px;
+
+  h4 {
+    color: #333;
+    margin-bottom: 125px;
+    font-weight: bold;
+  }
 
   img {
     max-height: 325px;
@@ -205,7 +269,7 @@ body {
 }
 
 #foot {
-  background: #222;
+  background: linear-gradient(to bottom, purple, #222);
   text-align: right;
   display: flex;
   align-items: flex-end;
@@ -248,11 +312,28 @@ body {
 
     }
   }
+
+  .top {
+    background: maroon;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 10px;
+    position: relative;
+    right: 15px;
+    bottom: 175px;
+    transition: all 2s;
+  }
+
+  .container {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), #222);
+    padding: 8px;
+  }
 }
 
 .social-list {
   display: flex;
-  // justify-content: space-around;
+
   li {
     padding-right: 15px;
   }
@@ -260,7 +341,7 @@ body {
 
 .card {
   &:hover {
-    transition: all 0.25s;
+    transition: 0.25s all;
     position: relative;
     top: -2px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
@@ -274,20 +355,31 @@ body {
   }
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 768px){
-  #portfolio {
-    .card-image {
+@media only screen and (max-width: 1200px) {
+  #skills {
+    .skills-container {
+      justify-content: center;
+    }
+  }
+  #others {
+    h4 {
+      font-size: 3.5em;
+    }
+
+    .skills-container {
+      text-align: center;
+
       img {
-        min-height: auto;
+        max-height: 275px;
       }
     }
   }
 }
 
 @media only screen and (max-width: 768px) {
-  #others {
-    img {
-      max-height: 300px;
+  #skills {
+    .skills-container {
+      justify-content: center;
     }
   }
 }
@@ -295,8 +387,6 @@ body {
 @media only screen and (max-width: 480px) {
   #skills {
     .skills-container {
-      justify-content: center;
-
       img {
         height: 100px;
       }
@@ -304,6 +394,9 @@ body {
   }
 
   #others {
+    h4 {
+      font-size: 3em;
+    }
     img {
       width: 100%;
     }

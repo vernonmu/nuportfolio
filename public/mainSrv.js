@@ -1,3 +1,3 @@
 app.service('mainSrv', function() {
-  console.log('we are served.');
+  console.log('Hello! Thank you for visiting ...');
 })

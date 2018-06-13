@@ -1,1 +1,1 @@
-var app = angular.module('portfolio', ['duScroll'])
+var app = angular.module('portfolio', ['duScroll', 'ngAnimate'])

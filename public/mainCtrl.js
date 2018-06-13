@@ -1,3 +1,3 @@
 app.controller('mainCtrl', function($scope, mainSrv) {
-  console.log('we are controlled');
+  console.log('Please enjoy your stay.');
 })

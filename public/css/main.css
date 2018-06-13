@@ -54,20 +54,60 @@ body {
       float: none;
       width: 75px;
       text-align: center;
-      padding: 5px; }
+      padding: 5px;
+      transition: all 2s;
+      margin: 0 10px; }
       #header .navig ul li:hover {
         background: #002946;
-        color: white;
-        border-radius: 2px;
-        transition: all 2s; }
+        border-radius: 5px; }
+        #header .navig ul li:hover a {
+          color: white; }
+      #header .navig ul li a {
+        color: #333; }
   #header h1 {
     padding: 250px 0 25px;
     font-family: "Oswald", sans-serif;
     font-weight: bold;
     font-size: 3rem;
     text-align: center; }
+    #header h1 a {
+      color: #007679; }
   #header .btn-go {
     margin-top: 55px; }
+  #header .port-tooltip {
+    position: relative;
+    transition: all 2s; }
+  #header .port-tooltip[data-tooltip]:before {
+    position: absolute;
+    width: auto;
+    top: -71px;
+    left: -8px;
+    background-color: #333;
+    color: #ffffff;
+    line-height: 30px;
+    border-radius: 2px;
+    padding: 16px 15px;
+    content: attr(data-tooltip);
+    white-space: nowrap;
+    opacity: 0;
+    font-size: 20px;
+    transition: opacity 0.75s ease-out;
+    /*   text-transform: uppercase; */ }
+  #header .port-tooltip[data-tooltip]:after {
+    position: absolute;
+    left: 15px;
+    top: -9px;
+    border-top: 7px solid #333;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    content: "";
+    opacity: 0;
+    transition: opacity 0.75s ease-out; }
+  #header .port-tooltip[data-tooltip]:hover:after,
+  #header .port-tooltip[data-tooltip]:hover:before {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.75s ease-out; }
 
 #skills {
   background: #002946;
@@ -89,6 +129,9 @@ body {
     #skills .skills-container .git {
       background: white;
       border-radius: 50%; }
+    #skills .skills-container img:hover {
+      height: 225px;
+      transition: height 0.25s ease-out; }
   #skills .btn-see {
     margin: 75px auto;
     width: 175px;
@@ -100,24 +143,19 @@ body {
   #portfolio h4 {
     color: white;
     padding-bottom: 10px; }
-  #portfolio img {
-    height: 250px; }
   #portfolio .recent-description {
     color: #fafafa;
     padding-bottom: 50px;
     line-height: 2;
     font-size: 18px; }
   #portfolio .card-image {
-    overflow: hidden;
-    display: flex;
-    justify-content: center; }
-    #portfolio .card-image img {
-      min-height: 300px; }
+    overflow: hidden; }
   #portfolio .not-card {
     margin-top: 10px;
     padding: 15px;
-    background: white;
-    color: #333; }
+    background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.95));
+    color: #333;
+    border-radius: 3px; }
   #portfolio .buttons {
     margin-top: 45px; }
     #portfolio .buttons .btn-flat {
@@ -131,9 +169,13 @@ body {
     padding-top: 25px; }
 
 #others {
-  background: purple;
+  background: linear-gradient(to bottom, #FFAE19, purple);
   color: white;
   padding-top: 100px; }
+  #others h4 {
+    color: #333;
+    margin-bottom: 125px;
+    font-weight: bold; }
   #others img {
     max-height: 325px;
     border-radius: 5px;
@@ -145,7 +187,7 @@ body {
     padding-bottom: 75px; }
 
 #foot {
-  background: #222;
+  background: linear-gradient(to bottom, purple, #222);
   text-align: right;
   display: flex;
   align-items: flex-end;
@@ -171,6 +213,19 @@ body {
     font-size: .75em; }
     #foot p.captain {
       background: white; }
+  #foot .top {
+    background: maroon;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 10px;
+    position: relative;
+    right: 15px;
+    bottom: 175px;
+    transition: all 2s; }
+  #foot .container {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), #222);
+    padding: 8px; }
 
 .social-list {
   display: flex; }
@@ -178,7 +233,7 @@ body {
     padding-right: 15px; }
 
 .card:hover {
-  transition: all 0.25s;
+  transition: 0.25s all;
   position: relative;
   top: -2px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5); }
@@ -187,18 +242,24 @@ body {
   .container {
     width: 80%; } }
 
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
-  #portfolio .card-image img {
-    min-height: auto; } }
-
-@media only screen and (max-width: 768px) {
-  #others img {
-    max-height: 300px; } }
-
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1200px) {
   #skills .skills-container {
     justify-content: center; }
-    #skills .skills-container img {
-      height: 100px; }
+  #others h4 {
+    font-size: 3.5em; }
+  #others .skills-container {
+    text-align: center; }
+    #others .skills-container img {
+      max-height: 275px; } }
+
+@media only screen and (max-width: 768px) {
+  #skills .skills-container {
+    justify-content: center; } }
+
+@media only screen and (max-width: 480px) {
+  #skills .skills-container img {
+    height: 100px; }
+  #others h4 {
+    font-size: 3em; }
   #others img {
     width: 100%; } }

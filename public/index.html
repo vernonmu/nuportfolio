@@ -33,16 +33,18 @@
         <ul>
           <li><a href="#tech" du-smooth-scroll duration="1550">Skills</a></li>
           <li><a href="#work" du-smooth-scroll duration="1550">Work</a></li>
-          <!-- <li>Contact</li> -->
         </ul>
       </div>
-      <h1>Vernon Mullen is a front-end developer in Dallas, Texas.</h1>
+      <h1>
+        <a href="mullen-resume-2018.pdf" title="download my resume" class="port-tooltip" data-tooltip="Download my resume" download>Vernon Mullen</a> is a front-end developer in Dallas, Texas.
+      </h1>
       <a class="btn-go btn btn-primary btn-lg"
       du-smooth-scroll
       href="#tech"
       duration="1550">
         Lets go!
       </a>
+
     </section>
     <section id="skills">
       <div id="tech" class="container">
@@ -51,9 +53,7 @@
           I use JavaScript, Angular, ReactJS, ASP.NET, C#, NodeJS, Scss, Gulp, Bootstrap, Material, Git & Gitflow for my work, while using Atom Editor (preferably), Webstorm, Visual Studio, or good-ole notepad.</p>
         <div class="skills-container center-align">
           <img src="https://vernonmu.github.io/portfolio/img/js-skills-icons.png" alt="">
-          <!-- <p>JavaScript</p> -->
           <img src="https://vernonmu.github.io/portfolio/img/angjs-skills-icons.png" alt="">
-          <!-- <p>Angular</p> -->
           <img src="https://vernonmu.github.io/portfolio/img/react-skills-icons.png" alt="">
           <img src="https://vernonmu.github.io/portfolio/img/node-skills-icons.png" alt="">
           <img src="https://vernonmu.github.io/portfolio/img/sass-skills-icons.png" alt="">
@@ -152,7 +152,8 @@
         </div>
       </div>
     </section>
-    <section id="others">
+
+    <section id="others"  du-scroll-container="test">
       <div class="container">
         <h4>I'm proud to have also collaborated with these awesome organizations.</h4>
         <div class="skills-container">
@@ -166,8 +167,8 @@
       </div>
     </section>
     <section id="foot">
+
       <div class="container">
-        <h4>&</h4>
         <ul class="social-list">
           <li>
             Follow me
@@ -191,8 +192,13 @@
         </p>
       </div>
     </section>
+
+
     <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
     <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.0/angular-animate.min.js" charset="utf-8"></script>
+
+
     <script src="app.js" charset="utf-8"></script>
     <script src="mainCtrl.js" charset="utf-8"></script>
     <script src="mainSrv.js" charset="utf-8"></script>
