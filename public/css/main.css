@@ -170,7 +170,8 @@ body {
 #others {
   background: linear-gradient(to bottom, #FFAE19, purple);
   color: white;
-  padding-top: 100px; }
+  padding-top: 100px;
+  padding-bottom: 50px; }
   #others h4 {
     color: #333;
     margin-bottom: 125px;
@@ -183,10 +184,11 @@ body {
     margin: 100px; }
   #others .skills-container {
     margin-top: 75px;
-    padding-bottom: 75px; }
+    padding-bottom: 75px;
+    text-align: center; }
 
 #foot {
-  background: linear-gradient(to bottom, purple, #222);
+  background: linear-gradient(to bottom, maroon, black);
   text-align: right;
   display: flex;
   align-items: flex-end;
@@ -223,7 +225,7 @@ body {
     bottom: 175px;
     transition: all 2s; }
   #foot .container {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), #222);
+    background: linear-gradient(to bottom, maroon, black);
     padding: 8px; }
 
 .social-list {
@@ -236,6 +238,15 @@ body {
   position: relative;
   top: -2px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5); }
+
+#contact {
+  background: linear-gradient(to bottom, purple, maroon); }
+  #contact .container {
+    padding: 50px 5%;
+    color: white;
+    padding-bottom: 75px; }
+  #contact .button-container {
+    text-align: center; }
 
 @media only screen and (min-width: 993px) {
   .container {

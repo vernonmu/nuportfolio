@@ -1,206 +1,230 @@
 <!DOCTYPE html>
 <html ng-app="portfolio" lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio | Vernon Mullen</title>
-    <!-- googl analytics here -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/main.css">
-  </head>
-  <body ng-controller="mainCtrl">
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId            : '756505731186381',
-          autoLogAppEvents : true,
-          xfbml            : true,
-          version          : 'v3.0'
-        });
-      };
 
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "https://connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <section id="header" class="container">
-      <div class="navig">
-        <ul>
-          <li><a href="#tech" du-smooth-scroll duration="1550">Skills</a></li>
-          <li><a href="#work" du-smooth-scroll duration="1550">Work</a></li>
-        </ul>
-      </div>
-      <h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Vernon Mullen</title>
+  <!-- googl analytics here -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body ng-controller="mainCtrl">
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId: '756505731186381',
+        autoLogAppEvents: true,
+        xfbml: true,
+        version: 'v3.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {
+        return;
+      }
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <section id="header" class="container">
+    <div class="navig">
+      <ul>
+        <li><a href="#tech" du-smooth-scroll duration="1550">Skills</a></li>
+        <li><a href="#work" du-smooth-scroll duration="1550">Work</a></li>
+      </ul>
+    </div>
+    <h1>
         <a href="mullen-resume-2018.pdf" title="download my resume" class="port-tooltip" data-tooltip="Download my resume" download>Vernon Mullen</a> is a front-end developer in Dallas, Texas.
       </h1>
-      <a class="btn-go btn btn-primary btn-lg"
-      du-smooth-scroll
-      href="#tech"
-      duration="1550">
+    <a class="btn-go btn btn-primary btn-lg" du-smooth-scroll href="#tech" duration="1550">
         Lets go!
       </a>
 
-    </section>
-    <section id="skills">
-      <div id="tech" class="container">
-        <h4 class="left-align">Tech Stack</h4>
-        <p>
-          I use JavaScript, Angular, ReactJS, ASP.NET, C#, NodeJS, Scss, Gulp, Bootstrap, Material, Git & Gitflow for my work, while using Atom Editor (preferably), Webstorm, Visual Studio, or good-ole notepad.</p>
-        <div class="skills-container center-align">
-          <img src="https://vernonmu.github.io/portfolio/img/js-skills-icons.png" alt="">
-          <img src="https://vernonmu.github.io/portfolio/img/angjs-skills-icons.png" alt="">
-          <img src="https://vernonmu.github.io/portfolio/img/react-skills-icons.png" alt="">
-          <img src="https://vernonmu.github.io/portfolio/img/node-skills-icons.png" alt="">
-          <img src="https://vernonmu.github.io/portfolio/img/sass-skills-icons.png" alt="">
-          <img src="https://vernonmu.github.io/portfolio/img/gulp-skills-icons.png" alt="">
-          <img src="https://vernonmu.github.io/portfolio/img/bstr-skills-icons.png" alt="">
-          <img src="https://vernonmu.github.io/portfolio/img/mtrl-skills-icons.png" alt="">
-          <img src="https://vernonmu.github.io/portfolio/img/ghub-skills-icons.png" alt="" class="git">
-        </div>
-        <a href="#work" class="btn-see btn btn-lg btn-primary" du-smooth-scroll duration="1550">See my work</a>
+  </section>
+  <section id="skills">
+    <div id="tech" class="container">
+      <h4 class="left-align">Tech Stack</h4>
+      <p>
+        I use JavaScript, Angular, ReactJS, ASP.NET, C#, NodeJS, Scss, Gulp, Bootstrap, Material, Git & Gitflow for my work, while using Atom Editor (preferably), Webstorm, Visual Studio, or good-ole notepad.</p>
+      <div class="skills-container center-align">
+        <img src="https://vernonmu.github.io/portfolio/img/js-skills-icons.png" alt="">
+        <img src="https://vernonmu.github.io/portfolio/img/angjs-skills-icons.png" alt="">
+        <img src="https://vernonmu.github.io/portfolio/img/react-skills-icons.png" alt="">
+        <img src="https://vernonmu.github.io/portfolio/img/node-skills-icons.png" alt="">
+        <img src="https://vernonmu.github.io/portfolio/img/sass-skills-icons.png" alt="">
+        <img src="https://vernonmu.github.io/portfolio/img/gulp-skills-icons.png" alt="">
+        <img src="https://vernonmu.github.io/portfolio/img/bstr-skills-icons.png" alt="">
+        <img src="https://vernonmu.github.io/portfolio/img/mtrl-skills-icons.png" alt="">
+        <img src="https://vernonmu.github.io/portfolio/img/ghub-skills-icons.png" alt="" class="git">
       </div>
-    </section>
-    <section id="portfolio">
-      <div class="container" id="work">
-        <h4>My Recent Work</h4>
-        <p class="recent-description">
-          The websites and apps below represent a handful of recent projects I've worked on for a variety of groups and companies. I have a passion for building, and I have been so fortunate to work on great projects.
-        </p>
-        <div class="row">
-          <div class="col s12 l5">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/botaviascreen.png" alt="" class="responsive-img">
-              </div>
+      <a href="#work" class="btn-see btn btn-lg btn-primary" du-smooth-scroll duration="1550">See my work</a>
+    </div>
+  </section>
+  <section id="portfolio">
+    <div class="container" id="work">
+      <h4>My Recent Work</h4>
+      <p class="recent-description">
+        The websites and apps below represent a handful of recent projects I've worked on for a variety of groups and companies. I have a passion for building, and I have been so fortunate to work on great projects.
+      </p>
+      <div class="row">
+        <div class="col s12 l5">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/botaviascreen.png" alt="" class="responsive-img">
             </div>
           </div>
-          <div class="col s12 l7">
-            <div class="">
-              <div class="not-card">
-                <h5>Botavia Energy</h5>
-                <span class="badge jquery">JQuery</span>
-                <span class="badge html">HTML</span>
-                <span class="badge css">CSS</span>
-                <p>A UI Designer reached out to build this site for the client. I built the site using jQuery, HTML, and CSS.</p>
-                <div class="buttons">
-                  <a  href="http://www.botaviaenergy.com" target="_blank" class="btn btn-flat">
+        </div>
+        <div class="col s12 l7">
+          <div class="">
+            <div class="not-card">
+              <h5>Botavia Energy</h5>
+              <span class="badge jquery">JQuery</span>
+              <span class="badge html">HTML</span>
+              <span class="badge css">CSS</span>
+              <p>A UI Designer reached out to build this site for the client. I built the site using jQuery, HTML, and CSS.</p>
+              <div class="buttons">
+                <a href="http://www.botaviaenergy.com" target="_blank" class="btn btn-flat">
                     Visit Website
                   </a>
-                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col s12 l5">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/excelsiorscreen.png" alt="" class="responsive-img">
-              </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l5">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/excelsiorscreen.png" alt="" class="responsive-img">
             </div>
           </div>
-          <div class="col s12 l7">
-            <div class="">
-              <div class="not-card">
-                <h5>Excelsior Transportation</h5>
+        </div>
+        <div class="col s12 l7">
+          <div class="">
+            <div class="not-card">
+              <h5>Excelsior Transportation</h5>
 
-                <span class="badge jquery">AngularJS</span>
-                <span class="badge css">SCSS</span>
-                <span class="badge html">HTML</span>
-                <span class="badge node">NodeJS</span>
-                <p>This client was launching a new business. I designed and built this site to get their operation started. The site uses AngularJS, SCSS, and NodeJS to serve the requests.</p>
-                <div class="buttons">
-                  <a href="http://www.travelexl.com" class="btn btn-flat" target="_blank">
+              <span class="badge jquery">AngularJS</span>
+              <span class="badge css">SCSS</span>
+              <span class="badge html">HTML</span>
+              <span class="badge node">NodeJS</span>
+              <p>This client was launching a new business. I designed and built this site to get their operation started. The site uses AngularJS, SCSS, and NodeJS to serve the requests.</p>
+              <div class="buttons">
+                <a href="http://www.travelexl.com" class="btn btn-flat" target="_blank">
                     Visit Website
                   </a>
-                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col s12 l5">
-            <div class="card">
-              <div class="card-image">
-                <img src="https://vernonmu.github.io/portfolio/img/tqkit-screen4.png" alt="" class="responsive-img">
-              </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l5">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://vernonmu.github.io/portfolio/img/tqkit-screen4.png" alt="" class="responsive-img">
             </div>
           </div>
-          <div class="col s12 l7">
-            <div class="">
-              <div class="not-card">
-                <h5>Tqkit CRM</h5>
+        </div>
+        <div class="col s12 l7">
+          <div class="">
+            <div class="not-card">
+              <h5>Tqkit CRM</h5>
 
-                <span class="badge angular">AngularJS</span>
-                <span class="badge css">SCSS</span>
-                <span class="badge html">HTML</span>
-                <span class="badge node">NodeJS</span>
-                <span class="badge psql">PostgreSQL</span>
-                <span class="badge aws">AWS</span>
-                <p>I built this work service ticket customer relationship management (CRM) app to serve businesses with employees visiting customer sites. The single page app uses AngularJS, NodeJS, HTML, SCSS, and PostgreSQL to store the company and ticket data in multiple tables.</p>
-                <div class="buttons">
-                  <button type="button" name="button" class="btn btn-flat">
+              <span class="badge angular">AngularJS</span>
+              <span class="badge css">SCSS</span>
+              <span class="badge html">HTML</span>
+              <span class="badge node">NodeJS</span>
+              <span class="badge psql">PostgreSQL</span>
+              <span class="badge aws">AWS</span>
+              <p>I built this work service ticket customer relationship management (CRM) app to serve businesses with employees visiting customer sites. The single page app uses AngularJS, NodeJS, HTML, SCSS, and PostgreSQL to store the company and ticket
+                data in multiple tables.</p>
+              <div class="buttons">
+                <button type="button" name="button" class="btn btn-flat">
                     Visit Website
                   </button>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section id="others"  du-scroll-container="test">
-      <div class="container">
-        <h4>I'm proud to have also collaborated with these awesome organizations.</h4>
-        <div class="skills-container">
-          <img src="/images/inf-port-logo-size.jpg" alt="">
-          <img src="/images/nis-port-logo-size.jpg" alt="">
-          <img src="/images/sub-port-logo-size.jpg" alt="">
-          <img src="/images/ste-port-logo-size.png" alt="">
-          <img src="/images/jcp-port-logo-size.png" alt="">
-          <img src="/images/fs-port-logo-size.png" alt="">
-        </div>
+    </div>
+  </section>
+  <section id="others" du-scroll-container="test">
+    <div class="container">
+      <h4>I'm proud to have also collaborated with these awesome organizations.</h4>
+      <div class="skills-container">
+        <img src="/images/inf-port-logo-size.jpg" alt="">
+        <img src="/images/nis-port-logo-size.jpg" alt="">
+        <img src="/images/sub-port-logo-size.jpg" alt="">
+        <img src="/images/ste-port-logo-size.png" alt="">
+        <img src="/images/jcp-port-logo-size.png" alt="">
+        <img src="/images/fs-port-logo-size.png" alt="">
       </div>
-    </section>
-    <section id="foot">
-      <div class="container">
-        <ul class="social-list">
-          <li>
-            Follow me
-          </li>
-          <li>
-            <a href="http://www.twitter.com/mullen_vernon">
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container">
+
+      <h3>Let's Connect</h3>
+
+      <p class="flow-text" style="margin-bottom:30px;">Follow me with the links below. And, please let me know if I can help you or your team with any of your current or upcoming projects!</p>
+
+      <div class="button-container">
+        <a href="mailto:vernonmu@gmail.com" class="waves-effect waves-light btn">
+          <i class="far fa-envelope-open"></i>
+
+
+        Email Me
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+  <section id="foot">
+    <div class="container">
+      <ul class="social-list">
+        <li>
+          Follow me
+        </li>
+        <li>
+          <a href="http://www.twitter.com/mullen_vernon">
               <i class="fab fa-twitter"></i>
             </a>
-          </li>
-          <li>
-            <a href="http://www.linkedin.com/en/vernonmullen">
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/en/vernonmullen">
               <i class="fab fa-linkedin-in"></i>
             </a>
-          </li>
-        </ul>
-        <p>
-          2018, Vernon Mullen.
-        </p>
-        <p class="captain">
-          May the force be with you, always.
-        </p>
-      </div>
-    </section>
+        </li>
+      </ul>
+      <p>
+        2018, Vernon Mullen.
+      </p>
+      <p class="captain">
+        May the force be with you, always.
+      </p>
+    </div>
+  </section>
 
 
-    <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
-    <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.0/angular-animate.min.js" charset="utf-8"></script>
+  <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
+  <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.0/angular-animate.min.js" charset="utf-8"></script>
 
 
-    <script src="app.js" charset="utf-8"></script>
-    <script src="mainCtrl.js" charset="utf-8"></script>
-    <script src="mainSrv.js" charset="utf-8"></script>
-  </body>
+  <script src="app.js" charset="utf-8"></script>
+  <script src="mainCtrl.js" charset="utf-8"></script>
+  <script src="mainSrv.js" charset="utf-8"></script>
+</body>
+
 </html>
