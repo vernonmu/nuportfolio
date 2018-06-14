@@ -5,6 +5,7 @@ const nodemon = require('gulp-nodemon');
 const useref = require('gulp-useref');
 const minifyCss = require('gulp-minify-css');
 const gulpif = require('gulp-if');
+const runSequence = require('run-sequence');
 
 
 gulp.task('sass', () => {
@@ -41,3 +42,10 @@ gulp.task('css-files', function () {
 });
 
 gulp.task('default', ['sass', 'start', 'sass:watch']);
+gulp.task ('build', function(callback){
+  runSequence(
+    'css-files',
+    'copy-html-files',
+    callback
+  );
+});
