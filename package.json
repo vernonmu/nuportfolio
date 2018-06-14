@@ -13,7 +13,10 @@
   "dependencies": {
     "express": "^4.16.3",
     "gulp": "^3.9.1",
+    "gulp-if": "^2.0.2",
+    "gulp-minify-css": "^1.2.4",
     "gulp-nodemon": "^2.2.1",
-    "gulp-sass": "^4.0.1"
+    "gulp-sass": "^4.0.1",
+    "gulp-useref": "^3.1.5"
   }
 }
